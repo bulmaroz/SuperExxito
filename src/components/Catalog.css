@@ -1,0 +1,107 @@
+.catalog {
+  background: var(--bg);
+}
+
+.catalog__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.catalog__filter {
+  padding: 0.55rem 1.15rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 999px;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  transition: all 0.2s;
+}
+
+.catalog__filter:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.catalog__filter--active {
+  background: var(--red);
+  border-color: var(--red);
+  color: white;
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.product-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.product-card__badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--yellow);
+  color: var(--text);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.product-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-card__name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: var(--red);
+}
+
+.product-card__desc {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.product-card__price {
+  margin-top: 1rem;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--text);
+}
+
+.product-card__price span {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.product-card__price--consult {
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--red);
+}

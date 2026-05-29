@@ -1,0 +1,139 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--header-h);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.header--scrolled {
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo__badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.logo__name {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  letter-spacing: 0.04em;
+  color: var(--red);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.nav__list a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.nav__list a:hover {
+  color: var(--red);
+}
+
+.nav__cta {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-toggle--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: fixed;
+    inset: var(--header-h) 0 0 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+    background: var(--surface);
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+  }
+
+  .nav--open {
+    transform: translateX(0);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  .nav__list a {
+    font-size: 1.15rem;
+    color: var(--text);
+  }
+
+  .nav__cta {
+    width: 100%;
+  }
+}
