@@ -49,7 +49,7 @@ export default function Contact() {
                   <div>
                     <strong>Teléfono</strong>
                     <p>
-                      <a href="tel:+525512345678">55 1234 5678</a>
+                      <a href="tel:+528448077145">844 807 7145</a>
                     </p>
                   </div>
                 </li>
@@ -82,7 +82,7 @@ export default function Contact() {
               </ul>
             </div>
 
-            <a href="tel:+525512345678" className="btn btn-primary contact__call">
+            <a href="tel:+528448077145" className="btn btn-primary contact__call">
               Llamar ahora
             </a>
           </div>
