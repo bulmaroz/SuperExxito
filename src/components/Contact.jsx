@@ -59,7 +59,7 @@ export default function Contact() {
                     <strong>WhatsApp</strong>
                     <p>
                       <a
-                        href="https://wa.me/525512345678"
+                        href="https://wa.me/528448077145?text=Hola%20Super%20Exxito%2C%20me%20gustaría%20saber%20más%20sobre%20sus%20productos."
                         target="_blank"
                         rel="noopener noreferrer"
                       >
