@@ -43,3 +43,4 @@ Abre la URL que muestra Vite en la terminal (normalmente `http://localhost:5173`
 ## Imágenes
 
 Las fotos de la fachada están en `public/images/`. Puedes reemplazarlas manteniendo los mismos nombres o actualizar las rutas en `Hero.jsx`.
+
