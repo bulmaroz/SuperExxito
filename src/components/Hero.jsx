@@ -1,10 +1,12 @@
 import './Hero.css'
 
+const base = import.meta.env.BASE_URL
+
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="hero__bg">
-        <img src="/images/tienda-1.png" alt="Fachada de Carnicería Super Exxito" />
+        <img src={`${base}images/tienda-1.png`} alt="Fachada de Carnicería Super Exxito" />
         <div className="hero__overlay" />
       </div>
 
@@ -44,7 +46,7 @@ export default function Hero() {
 
         <div className="hero__card">
           <img
-            src="/images/tienda-2.png"
+            src={`${base}images/tienda-2.png`}
             alt="Entrada de Super Exxito en esquina"
             className="hero__card-img"
           />
