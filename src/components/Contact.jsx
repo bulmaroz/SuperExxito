@@ -1,7 +1,7 @@
 import './Contact.css'
 
 const MAP_EMBED =
-  'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888!2d-99.1332!3d19.4326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMDcnNTkuNSJX!5e0!3m2!1ses!2smx!4v1'
+  'https://maps.google.com/maps?q=25.4279445,-100.9248056&z=17&output=embed'
 
 export default function Contact() {
   return (
@@ -41,7 +41,7 @@ export default function Contact() {
                   <span className="contact__icon" aria-hidden="true">📍</span>
                   <div>
                     <strong>Dirección</strong>
-                    <p>Av. del Barrio #123, Col. Centro, CDMX</p>
+                    <p>Calle 27 #738, Col. Mirasierra, Saltillo, Coah</p>
                   </div>
                 </li>
                 <li>
